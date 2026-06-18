@@ -1,24 +1,752 @@
 <!doctype html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Practice</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Мій вебпроєкт</h1>
-    </header>
-    <main>
-      <section>
-        <h2>Головна секція</h2>
-        <p>Це перша сторінка навчального вебпроєкту.</p>
-      </section>
-    </main>
-    <footer>
-      <p>© 2026 Навчальна практика</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Головна | TransitFlow</title>
+  <meta name="description" content="TransitFlow - найкращі логістичні рішення." />
+  <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-top">
+      <div class="container header-top-container">
+        <div class="logo">
+          <img src="assets/icons/Logo-1-icon.png" alt="TransitFlow Логотип" />
+        </div>
+        <div class="header-contacts-info">
+          <div class="info-item">
+            <div class="info-icon">
+              <img src="assets/icons/clock-icon.png" alt="Годинник" />
+            </div>
+            <div class="info-text">
+              <span class="info-title">Пн - Сб 9.00 - 18.00</span>
+              <span class="info-desc">Неділя Вихідний</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">
+              <img src="assets/icons/email-yellow-icon.png" alt="Email" />
+            </div>
+            <div class="info-text">
+              <span class="info-title">Email</span>
+              <span class="info-desc">contact@transitflow.com</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">
+              <img src="assets/icons/call-yellow-icon.png" alt="Телефон" />
+            </div>
+            <div class="info-text">
+              <span class="info-title">Зателефонуйте</span>
+              <span class="info-desc">(044) 112 365 489</span>
+            </div>
+          </div>
+        </div>
+        <button class="burger-menu" aria-label="Перемикач меню">
+          <span class="line"></span><span class="line"></span><span class="line"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container header-bottom-container">
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html" class="active">Головна</a></li>
+            <li class="nav-divider"></li>
+            <li><a href="about.html">Про компанію</a></li>
+            <li class="nav-divider"></li>
+            <li><a href="services.html">Послуги</a></li>
+            <li class="nav-divider"></li>
+            <li><a href="contact.html">Контакти</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <div class="social-links">
+            <a href="#"><img src="assets/icons/Instagram-icon.png" alt="Instagram" /></a>
+            <a href="#"><img src="assets/icons/Facebook-icon.png" alt="Facebook" /></a>
+            <a href="#"><img src="assets/icons/Twitter-icon.png" alt="Twitter" /></a>
+            <a href="#"><img src="assets/icons/Linkdin-icon.png" alt="LinkedIn" /></a>
+          </div>
+          <button class="btn btn-white trigger-modal">
+            Розрахунок вартості
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner bg-home fetchpriority=high">
+      <div class="container">
+        <span class="badge-tag">Логістика та ланцюги постачання</span>
+        <h1 class="hero-title opt-cls-1">
+          Ваш безпечний шлях до цілі
+        </h1>
+        <p class="opt-cls-2">
+          Професійні логістичні рішення для вашого бізнесу. Ми забезпечуємо
+          безпеку та швидкість доставки в будь-яку точку світу.
+        </p>
+        <a href="about.html" class="btn btn-yellow">Дізнатись більше</a>
+      </div>
+    </section>
+
+    <section class="home-what-we-do-section opt-cls-3">
+      <div class="container grid-two-col align-items-center">
+        <div class="home-wwd-text">
+          <span class="badge-tag-dark">Що ми робимо</span>
+          <h2 class="section-title-text">
+            Безпечні та надійні логістичні рішення
+          </h2>
+        </div>
+
+        <div class="services-grid-home">
+          <div class="service-item">
+            <div class="s-icon">
+              <img src="/assets/icons/Icon-1.png" alt="Морські" class="opt-cls-4" />
+            </div>
+            <div class="s-text">
+              <h3 class="service-text">Морські перевезення</h3>
+              <p>
+                Надійні контейнерні перевезення через океанські маршрути.
+                Забезпечуємо цілісність та графік.
+              </p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="s-icon">
+              <img src="/assets/icons/Icon-2.png" alt="Складські" class="opt-cls-4" />
+            </div>
+            <div class="s-text">
+              <h3>Складські послуги</h3>
+              <p>
+                Сучасні складські комплекси для безпечного зберігання вантажів
+                будь-якого типу.
+              </p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="s-icon">
+              <img src="/assets/icons/Icon-3.png" alt="Авіа" class="opt-cls-4" />
+            </div>
+            <div class="s-text">
+              <h3>Авіаперевезення</h3>
+              <p>
+                Експрес-доставка вантажів у найкоротші терміни по всьому світу
+                завдяки надійним партнерам.
+              </p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="s-icon">
+              <img src="/assets/icons/Icon-5.png" alt="Локальна" class="opt-cls-4" />
+            </div>
+            <div class="s-text">
+              <h3>Локальна доставка</h3>
+              <p>
+                Швидка доставка вантажівками на території України та Європи
+                "від дверей до дверей".
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-us-global">
+      <div class="why-us-global-bg"></div>
+
+      <div class="container">
+        <div class="why-us-wrapper">
+          <div class="grid-two-col align-items-center">
+            <div class="wu-text-col">
+              <span class="badge-tag-dark opt-cls-5">Чому обирають нас</span>
+              <h2 class="section-title-text opt-cls-6">
+                Глобальна логістика для вашого бізнесу
+              </h2>
+              <p class="opt-cls-7">
+                Використовуючи гнучкі рамки, ми забезпечуємо надійний огляд стратегії,
+                сприяючи спільному мисленню для подальшого розвитку загального
+                ціннісного пропозиції.
+              </p>
+              <p>
+                Органічно розвиваючи глобальний світогляд деструктивних
+                інновацій, ми прагнемо досягти максимального розкриття потенціалу
+              </p>
+
+              <ul class="gl-features">
+                <li>
+                  <div class="gl-icon">
+                    <img src="assets/icons/box-icon.png" alt="Box" />
+                  </div>
+                  <span>Доставка вчасно</span>
+                </li>
+                <li>
+                  <div class="gl-icon">
+                    <img src="assets/icons/money-icon.png" alt="Money" />
+                  </div>
+                  <span>Оптимізовані витрати на подорож</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="wu-images-col relative">
+              <img src="assets/images/airplane.jpg" alt="Airplane" class="img-large" />
+              <img src="assets/images/woman.png" alt="Woman packing" class="img-small" />
+            </div>
+          </div>
+
+          <div class="gl-stats">
+            <div class="stat-item">
+              <h2>1294</h2>
+              <p><span class="yellow-square"></span> Доставлені пакети</p>
+            </div>
+            <div class="stat-item border-left-desk">
+              <h2>3594</h2>
+              <p><span class="yellow-square"></span> Задоволені клієнти</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="our-projects-section">
+      <div class="projects-header text-center">
+        <h2 class="section-title-text">Транспортування по всьому світу</h2>
+      </div>
+
+      <div class="projects-gallery-container">
+        <div class="projects-gallery">
+          <div class="project-item">
+            <img src="assets/images/gallery-1.png" alt="Рідкі вантажі">
+            <div class="project-overlay">
+              <h3>Рідкі вантажі</h3>
+              <p>Преміум Танкери</p>
+            </div>
+          </div>
+          <div class="project-item">
+            <img src="assets/images/gallery-2.png" alt="Пакування">
+            <div class="project-overlay">
+              <h3>Пакування</h3>
+              <p>Управління складом</p>
+            </div>
+          </div>
+          <div class="project-item">
+            <img src="assets/images/gallery-3.png" alt="Контрактна логістика">
+            <div class="project-overlay">
+              <h3>Контрактна логістика</h3>
+              <p>Дорожнє транспортування</p>
+            </div>
+          </div>
+          <div class="project-item">
+            <img src="assets/images/gallery-4.png" alt="Складські послуги">
+            <div class="project-overlay">
+              <h3>Складські послуги</h3>
+              <p>Великі склади</p>
+            </div>
+          </div>
+          <div class="project-item">
+            <img src="assets/images/gallery-5.png" alt="Спеціалізований транспорт">
+            <div class="project-overlay">
+              <h3>Спеціалізований транспорт</h3>
+              <p>Океанський транспорт</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects-footer text-center">
+        <a href="services.html" class="btn btn-dark">Більше послуг</a>
+      </div>
+    </section>
+
+    <section class="testimonial-section bg-light">
+      <div class="container">
+        <div class="testimonial-header opt-cls-8">
+          <div>
+            <span class="badge-tag-dark">Відгуки</span>
+            <h2 class="section-title-text opt-cls-9">
+              Що кажуть наші клієнти
+            </h2>
+          </div>
+          <div class="swiper-nav-buttons">
+            <div class="swiper-button-prev-custom">
+              <img src="assets/icons/arrow-left.png" alt="Попередній" />
+            </div>
+            <div class="swiper-button-next-custom">
+              <img src="assets/icons/arrow-right.png" alt="Наступний" />
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper testimonial-swiper">
+<div class="swiper-wrapper">
+  <div class="swiper-slide">
+    <div class="testimonial-card">
+      <div class="t-meta">
+        <img src="assets/icons/quote-icon.png" alt="Лапки" class="quote-icon" />
+      </div>
+      <div class="t-user opt-cls-10">
+        <img src="assets/images/User.png" alt="Клієнт" class="opt-cls-11" />
+        <div>
+          <h3 class="opt-cls-9">Кетлін Сміт</h3>
+          <p class="opt-cls-12">Компанія Fuel</p>
+        </div>
+      </div>
+      <p class="t-text opt-cls-13">
+        Чудовий сервіс, гнучкий підхід до нашої стратегії. Допомогли
+        оптимізувати наші витрати на логістику.
+      </p>
+      <div class="rating-stars" aria-label="Рейтинг 5 зірок">
+        <img src="assets/icons/stars-icon.png" alt="Зірка" />
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper-slide">
+    <div class="testimonial-card dark-card">
+      <div class="t-meta">
+        <img src="assets/icons/quote-icon.png" alt="Лапки" class="quote-icon" />
+      </div>
+      <div class="t-user opt-cls-10">
+        <img src="assets/images/User-1.png" alt="Клієнт" class="opt-cls-11" />
+        <div>
+          <h3 class="opt-cls-14">Джон Мартін</h3>
+          <p class="opt-cls-12">Реставрація</p>
+        </div>
+      </div>
+      <p class="t-text opt-cls-13">
+        Команда професіоналів. Завжди на зв'язку, вантаж прибув
+        вчасно без жодних пошкоджень.
+      </p>
+      <div class="rating-stars" aria-label="Рейтинг 5 зірок">
+        <img src="assets/icons/stars-icon.png" alt="Зірка" />
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper-slide">
+    <div class="testimonial-card">
+      <div class="t-meta">
+        <img src="assets/icons/quote-icon.png" alt="Лапки" class="quote-icon" />
+      </div>
+      <div class="t-user opt-cls-10">
+        <img src="assets/images/team-1.png" alt="Клієнт" class="opt-cls-11" />
+        <div>
+          <h3 class="opt-cls-9">Олена Коваленко</h3>
+          <p class="opt-cls-12">ТОВ "Імпорт-Експорт"</p>
+        </div>
+      </div>
+      <p class="t-text opt-cls-13">
+        Найкращі тарифи на ринку та дуже швидке розмитнення. Однозначно рекомендую до співпраці!
+      </p>
+      <div class="rating-stars" aria-label="Рейтинг 5 зірок">
+        <img src="assets/icons/stars-icon.png" alt="Зірка" />
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper-slide">
+    <div class="testimonial-card dark-card">
+      <div class="t-meta">
+        <img src="assets/icons/quote-icon.png" alt="Лапки" class="quote-icon" />
+      </div>
+      <div class="t-user opt-cls-10">
+        <img src="assets/images/team-2.png" alt="Клієнт" class="opt-cls-11" />
+        <div>
+          <h3 class="opt-cls-14">Майкл Джонсон</h3>
+          <p class="opt-cls-12">Tech Global</p>
+        </div>
+      </div>
+      <p class="t-text opt-cls-13">
+        Доставили наші сервери морем без жодних затримок. Дуже зручно відслідковувати вантаж онлайн.
+      </p>
+      <div class="rating-stars" aria-label="Рейтинг 5 зірок">
+        <img src="assets/icons/stars-icon.png" alt="Зірка" />
+      </div>
+    </div>
+  </div>
+</div>
+    </section>
+
+    <section class="why-choose-section">
+      <div class="why-choose-bg"></div>
+
+      <div class="container grid-two-col">
+        <div class="why-choose-image">
+          <img src="assets/images/airplane-2.png" alt="Літак" class="img-main">
+          <div class="moving-element">
+            <div class="me-icon"><img src="assets/icons/airplane-across-icon.png" alt="Airplane"></div>
+            <p>Переміщення ваших продуктів<br>через кордони</p>
+          </div>
+        </div>
+
+        <div class="why-choose-content">
+          <span class="badge-tag-dark opt-cls-15">Чому
+            обирають нас</span>
+          <h2 class="section-title-text opt-cls-16">Ми допомагаємо вам знайти найкращий шлях
+            щоб<br>досягти ваших цілей</h2>
+          <p class="opt-cls-17">Використовуючи гнучкі рамки, ми забезпечуємо надійний огляд стратегії,
+            сприяючи спільному мисленню для подальшого розвитку загального
+            ціннісного пропозиції.</p>
+
+          <div class="icon-list-grid">
+            <div class="icon-box">
+              <div class="ib-icon"><img src="assets/icons/box-icon.png" alt="Icon"></div>
+              <h3>Безпечне пакування</h3>
+            </div>
+            <div class="icon-box">
+              <div class="ib-icon"><img src="assets/icons/ship-icon.png" alt="Icon"></div>
+              <h3>Доставка по всьому світу</h3>
+            </div>
+            <div class="icon-box">
+              <div class="ib-icon"><img src="assets/icons/global-icon.png" alt="Icon"></div>
+              <h3>Глобальний відстеження</h3>
+            </div>
+            <div class="icon-box">
+              <div class="ib-icon"><img src="assets/icons/support-icon.png" alt="Icon"></div>
+              <h3>24/7 Підтримка</h3>
+            </div>
+            <div class="icon-box">
+              <div class="ib-icon"><img src="assets/icons/time-yellow-icon.png" alt="Icon"></div>
+              <h3>Доставка вчасно</h3>
+            </div>
+            <div class="icon-box">
+              <div class="ib-icon"><img src="assets/icons/coin-icon.png" alt="Icon"></div>
+              <h3>Прозора ціна</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-section">
+      <div class="container">
+        <div class="text-center opt-cls-18">
+          <span class="badge-tag-dark">Перевізники</span>
+          <h2 class="section-title-text">Наша команда експертів</h2>
+        </div>
+
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-image-wrapper">
+              <img src="assets/images/team-1.png" alt="Джессіка Оро" />
+              <div class="team-socials">
+                <a href="https://x.com"><img src="assets/icons/twitter-dark-icon.png" alt="Twitter" /></a>
+                <a href="https://www.facebook.com"><img src="assets/icons/facebook-dark-icon.png" alt="Facebook" /></a>
+                <a href="https://www.instagram.com"><img src="assets/icons/instagram-dark-icon.png"
+                    alt="Instagram" /></a>
+              </div>
+            </div>
+            <div class="team-info">
+              <h3>Джессіка Оро</h3>
+              <p>Логіст-дизайнер</p>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-image-wrapper">
+              <img src="assets/images/team-2.png" alt="Кетлін Сміт" />
+              <div class="team-socials">
+                <a href="https://ua.linkedin.com"><img src="assets/icons/In-dark-icon.png" alt="LinkedIn" /></a>
+                <a href="https://x.com"><img src="assets/icons/twitter-dark-icon.png" alt="Twitter" /></a>
+                <a href="https://www.facebook.com"><img src="assets/icons/facebook-dark-icon.png" alt="Facebook" /></a>
+                <a href="https://www.instagram.com"><img src="assets/icons/instagram-dark-icon.png"
+                    alt="Instagram" /></a>
+              </div>
+            </div>
+            <div class="team-info">
+              <h3>Кетлін Сміт</h3>
+              <p>Менеджер</p>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-image-wrapper">
+              <img src="assets/images/team-3.png" alt="Ребекка Тейлор" />
+              <div class="team-socials">
+                <a href="https://www.facebook.com"><img src="assets/icons/facebook-dark-icon.png" alt="Facebook" /></a>
+                <a href="https://www.instagram.com"><img src="assets/icons/instagram-dark-icon.png"
+                    alt="Instagram" /></a>
+              </div>
+            </div>
+            <div class="team-info">
+              <h3>Ребекка Тейлор</h3>
+              <p>Експедитор</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-section-home">
+      <div class="container contact-inner-home">
+        <div class="contact-content-home">
+
+          <div class="contact-info-col-home">
+            <span class="badge-tag-dark opt-cls-19">Контакти</span>
+            <h2 class="section-title-text opt-cls-20">Залишайтеся на
+              зв'язку</h2>
+            <p class="opt-cls-21">
+              Ми використовуємо гнучкі підходи для надання надійних послуг. Зв'яжіться з нами для обговорення деталей.
+            </p>
+
+            <div class="contact-info-blocks-home">
+              <div class="c-info-block-home">
+                <div class="c-icon-circle-home"><img src="assets/icons/email-yellow-icon.png" alt="Email"></div>
+                <div class="c-text-home">
+                  <span class="c-label-home">Email</span>
+                  <span class="c-value-home">contact@transitflow.com</span>
+                </div>
+              </div>
+              <div class="c-info-block-home">
+                <div class="c-icon-circle-home"><img src="assets/icons/call-yellow-icon.png" alt="Call"></div>
+                <div class="c-text-home">
+                  <span class="c-label-home">Зателефонуйте</span>
+                  <span class="c-value-home">(044) 112 365 489</span>
+                </div>
+              </div>
+              <div class="c-info-block-home">
+                <div class="c-icon-circle-home"><img src="assets/icons/clock-icon.png" alt="Time"></div>
+                <div class="c-text-home">
+                  <span class="c-label-home">Пн - Сб: 9.00 - 18.00</span>
+                  <span class="c-value-home">Неділя: Вихідний</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-col-home">
+            <form class="contact-form-home">
+              <div class="form-row-home">
+                <input type="text" placeholder="Ваше ім'я*" required />
+                <input type="email" placeholder="Email*" required />
+              </div>
+              <div class="form-row-home">
+                <input type="tel" placeholder="Номер телефону*" required />
+                <input type="text" placeholder="Місто*" required />
+              </div>
+              <textarea rows="5" placeholder="Ваше повідомлення"></textarea>
+              <div class="form-actions-home opt-cls-22">
+                <button type="submit" class="btn btn-yellow">Надіслати повідомлення</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="clients-banner border-bottom">
+        <div class="container clients-flex">
+          <img src="assets/images/partner1-logo.png" alt="Партнер 1" />
+          <img src="assets/images/partner2-logo.png" alt="Партнер 2" />
+          <img src="assets/images/partner3-logo.png" alt="Партнер 3" />
+          <img src="assets/images/partner4-logo.png" alt="Партнер 4" />
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-list-section">
+      <div class="container">
+        <div class="text-center opt-cls-18">
+          <span class="opt-cls-23">Наш блог</span>
+          <h2 class="section-title-text opt-cls-24">Наші останні новини</h2>
+        </div>
+
+        <div class="blog-list-container">
+          <div class="blog-list-item">
+            <div class="bli-image">
+              <img src="assets/images/blog-1.png" alt="Блог 1">
+              <a href="#" class="bli-overlay">Читати далі</a>
+            </div>
+            <div class="bli-date">
+              <img src="assets/icons/calendar-icon.png" alt="Календар" />
+              <span class="bli-day">08</span>
+              <span class="bli-month">Вересня</span>
+            </div>
+            <div class="bli-content">
+              <h3>Внутрішні вантажоперевезення — гідне рішення для вашого бізнесу</h3>
+              <p>Ми прагнемо створювати додаткову цінність для наших клієнтів шляхом впровадження сучасних технологій у
+                нашу роботу.</p>
+              <ul>
+                <li>Термінові транспортні рішення</li>
+                <li>Надійний та досвідчений персонал</li>
+                <li>Термінові транспортні рішення</li>
+                <li>Надійний та досвідчений персонал</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="blog-list-item">
+            <div class="bli-image">
+              <img src="assets/images/blog-2.png" alt="Блог 2">
+              <a href="#" class="bli-overlay">Читати далі</a>
+            </div>
+            <div class="bli-date">
+              <img src="assets/icons/calendar-icon.png" alt="Календар" />
+              <span class="bli-day">12</span>
+              <span class="bli-month">Вересня</span>
+            </div>
+            <div class="bli-content">
+              <h3>Як технології можуть допомогти перекроїти карту ланцюга поставок</h3>
+              <p>Ми прагнемо створювати додаткову цінність для наших клієнтів шляхом впровадження сучасних технологій у
+                нашу роботу.</p>
+              <ul>
+                <li>Термінові транспортні рішення</li>
+                <li>Надійний та досвідчений персонал</li>
+                <li>Термінові транспортні рішення</li>
+                <li>Надійний та досвідчений персонал</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="blog-list-item">
+            <div class="bli-image">
+              <img src="assets/images/blog-3.png" alt="Блог 3">
+              <a href="#" class="bli-overlay">Читати далі</a>
+            </div>
+            <div class="bli-date">
+              <img src="assets/icons/calendar-icon.png" alt="Календар" />
+              <span class="bli-day">25</span>
+              <span class="bli-month">Вересня</span>
+            </div>
+            <div class="bli-content">
+              <h3>П'ять речей, які у вас мають бути готові для брокера</h3>
+              <p>Ми прагнемо створювати додаткову цінність для наших клієнтів шляхом впровадження сучасних технологій у
+                нашу роботу.</p>
+              <ul>
+                <li>Термінові транспортні рішення</li>
+                <li>Надійний та досвідчений персонал</li>
+                <li>Термінові транспортні рішення</li>
+                <li>Надійний та досвідчений персонал</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center opt-cls-25">
+          <a href="#" class="btn btn-dark">Більше статей</a>
+        </div>
+      </div>
+    </section>
+    <div class="pre-footer-banner"></div>
+  </main>
+
+    <footer class="footer">
+      <div class="footer-header-bar">
+        <div class="container footer-header-grid">
+          <div class="footer-header-col brand-h-col">
+            <div class="logo">
+              <img src="assets/icons/Logo-1-icon.png" alt="TransitFlow Логотип" />
+            </div>
+          </div>
+          <div class="footer-header-col">
+            <h3 class="footer-title">Pages</h3>
+          </div>
+          <div class="footer-header-col">
+            <h3 class="footer-title">Utility</h3>
+          </div>
+          <div class="footer-header-col">
+            <h3 class="footer-title">Subscribe</h3>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-body-grid">
+        <div class="footer-column brand-col">
+          <p class="brand-text">
+            Використовуйте гнучкі методології для створення чіткого плану
+            спільного розроблення стратегії з метою підвищення загальної
+            цінності пропозиції.
+          </p>
+          <div class="footer-contacts">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <img src="assets/icons/email-yellow-icon.png" alt="Email" />
+              </div>
+              <div class="contact-info">
+                <span class="contact-label">Email</span>
+                <a href="mailto:contact@logistics.com" class="contact-value">contact@logistics.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <img src="assets/icons/call-yellow-icon.png" alt="Call" />
+              </div>
+              <div class="contact-info">
+                <span class="contact-label">Зв'яжіться з нами</span>
+                <a href="tel:00112365489" class="contact-value">(00) 112 365 489</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-column">
+          <ul class="footer-links-list">
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="contact.html">Контакти</a></li>
+            <li><a href="services.html">Послуги</a></li>
+            <li><a href="index.html">Головна</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <ul class="footer-links-list">
+            <li><a href="404.html">Не знайдено</a></li>
+          </ul>
+        </div>
+        <div class="footer-column subscribe-col">
+          <form class="footer-subscribe-form">
+            <input type="email" placeholder="Впишіть ваш email*" required autocomplete="email" />
+            <div class="subscribe-actions">
+              <button type="submit" class="btn btn-yellow">Відправити</button>
+              <div class="footer-socials">
+                <a href="#"> <img src="assets/icons/Linkdin-icon.png" alt="LinkedIn" /></a>
+                <a href="#"><img src="assets/icons/Instagram-icon.png" alt="Instagram" /></a>
+                <a href="#"><img src="assets/icons/Twitter-icon.png" alt="Twitter" /></a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container footer-bottom-container">
+          <p class="copyright">
+            Copyright © Reilian Vadim | Designed by VictorFlow - Powered by
+            Webflow.
+          </p>
+          <div class="footer-bottom-links">
+            <a href="#">Style Guide</a><a href="#">Licenses</a><a href="#">Changelog</a><a href="#">Password</a>
+          </div>
+        </div>
+      </div>
     </footer>
+
+    <div id="quoteModal" class="modal-overlay">
+      <div class="modal-wrapper">
+        <button class="modal-close">&times;</button>
+        <h2 class="modal-title">Розрахунок вартості</h2>
+        <form class="modal-form">
+          <div class="form-group">
+            <input type="text" required placeholder="Ваше ім'я" />
+          </div>
+          <div class="form-group">
+            <input type="tel" required placeholder="Телефон" />
+          </div>
+          <button type="submit" class="btn btn-yellow btn-full">
+            Відправити
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
-  </body>
+</body>
+
 </html>
